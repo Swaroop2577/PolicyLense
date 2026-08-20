@@ -1,0 +1,31 @@
+# Secrets
+.env
+
+# Model cache (large, re-downloaded automatically by sentence-transformers/HF)
+.cache/
+~/.cache/huggingface/
+
+# Eval results (timestamped run outputs - regenerable, and can grow large over time)
+evals/results/
+
+# Streamlit
+.streamlit/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+eval_venv/
+
+# IDE
+.vscode/
+.idea/
+*.DS_Store
+
+# Logs
+*.log
