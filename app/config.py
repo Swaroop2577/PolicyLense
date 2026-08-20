@@ -10,8 +10,17 @@ will add their own group below.
 
 import os
 from dotenv import load_dotenv
-
+import streamlit as st
 load_dotenv()
+
+def _get_secret(key: str) -> str:
+    """Reads from st.secrets when deployed, falls back to .env locally."""
+    try:
+        return st.secrets[key]
+    except (KeyError, FileNotFoundError):
+        return os.getenv(key)
+
+GOOGLE_API_KEY = _get_secret("GOOGLE_API_KEY")
 
 GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 
