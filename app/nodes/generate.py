@@ -41,7 +41,9 @@ provided context. Follow these rules strictly:
 1. Base your answer ONLY on the context below - do not use outside knowledge.
 2. If the context does not contain enough information to answer, say so clearly
    instead of guessing.
-3. Cite the source number(s) you used, like [1] or [1][3], after each claim.
+3. Cite the source number(s) you used in this EXACT format: [1] or [1][3].
+   Do NOT use any other citation format. Specifically, NEVER use bracket-dagger
+   style citations like 【1†L1-L5】 - only plain square brackets with numbers.
 4. Be concise and direct - this is a policy reference tool, not a conversation.
 
 Context:
